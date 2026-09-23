@@ -117,7 +117,7 @@ README.md               Documentation
 
 The userscript is intentionally self-contained. To work on it:
 
-1. Edit `videoflux.user.js`.
+1. Edit `vidboost.user.js`.
 2. Save it in Tampermonkey or reload the script from the dashboard.
 3. Refresh the video page.
 4. Press **Alt + Shift** and test both sliders.
@@ -126,7 +126,7 @@ No build step is required.
 
 ## Responsible use
 
-Use VideoFlux for videos you are allowed to watch and modify locally. Respect
+Use VidBoost for videos you are allowed to watch and modify locally. Respect
 the terms of service, accessibility needs, and volume limits of the websites
 you use. High gain can damage hearing or speakers; start at a low value.
 

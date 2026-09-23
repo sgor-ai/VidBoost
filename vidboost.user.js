@@ -1,6 +1,6 @@
 // ==UserScript==
-// @name         VideoFlux - Volume & Speed Control
-// @namespace    https://github.com/sgor-ai/VideoFlux
+// @name         VidBoost - Volume & Speed Control
+// @namespace    https://github.com/sgor-ai/VidBoost
 // @version      1.0.0
 // @description  A compact glassmorphism HUD for boosting video volume and adjusting playback speed.
 // @author       sgor-ai
@@ -93,7 +93,7 @@
 
           <div>
             <div style="font-size:13px;font-weight:600;color:#fff;letter-spacing:0.01em;">
-              VideoFlux
+              VidBoost
             </div>
           </div>
         </div>

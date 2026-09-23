@@ -1,26 +1,26 @@
 <div align="center">
 
-# VideoFlux
+# VidBoost
 
-**A compact glassmorphism HUD for controlling video volume and playback speed.**
+**A compact glassmorphism HUD for boosting video volume and controlling playback speed.**
 
 [Created by **sgor-ai**](https://github.com/sgor-ai)
 
 [![Userscript](https://img.shields.io/badge/Tampermonkey-userscript-00485B?logo=tampermonkey&logoColor=white)](https://www.tampermonkey.net/)
-[![Version](https://img.shields.io/badge/version-1.0.0-2563eb)](https://github.com/sgor-ai/VideoFlux)
+[![Version](https://img.shields.io/badge/version-1.0.0-2563eb)](https://github.com/sgor-ai/VidBoost)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 </div>
 
 <p align="center">
-  <img src="docs/media/videoflux-demo.gif" alt="VideoFlux volume and speed sliders moving through their ranges" width="860">
+  <img src="docs/media/vidboost-demo.gif" alt="VidBoost volume and speed controls" width="860">
 </p>
 
 <p align="center"><strong>Press <code>Alt</code> + <code>Shift</code>, tune the video, and keep watching.</strong></p>
 
-## What is VideoFlux?
+## What is VidBoost?
 
-VideoFlux is a lightweight [Tampermonkey](https://www.tampermonkey.net/) userscript
+VidBoost is a lightweight [Tampermonkey](https://www.tampermonkey.net/) userscript
 that adds a small, unobtrusive control panel to webpages containing HTML5 video.
 It uses the same dark, translucent glass panel for every site and keeps the
 controls close to the active video.
@@ -34,28 +34,32 @@ The panel provides:
 - Automatic selection of the currently playing video.
 - Support for pages with multiple video elements.
 
-> VideoFlux changes playback in your browser only. It does not download,
+> VidBoost changes playback in your browser only. It does not download,
 > re-encode, or upload videos.
 
 ## Demo
 
-The demo shows both sliders moving forward and backward in the same
+The supplied demo shows the VidBoost panel and its controls in the same
 glassmorphism style used by the userscript:
 
-![VideoFlux demo](docs/media/videoflux-demo.gif)
+![VidBoost demo](docs/media/vidboost-demo.gif)
 
-## Installation
+## Install by copying the script
 
 1. Install the [Tampermonkey browser extension](https://www.tampermonkey.net/).
-2. Open the Tampermonkey dashboard.
-3. Select **Create a new script**.
-4. Replace the starter template with the contents of
-   [`videoflux.user.js`](videoflux.user.js).
-5. Press **Ctrl+S** or choose **File > Save**.
-6. Open a page containing an HTML5 video and press **Alt + Shift**.
+2. Open the [raw userscript](https://raw.githubusercontent.com/sgor-ai/VidBoost/master/vidboost.user.js).
+3. Copy the entire file with **Ctrl+A**, then **Ctrl+C**.
+4. Open the Tampermonkey dashboard and choose **Create a new script**.
+5. Replace the starter template with the copied text.
+6. Press **Ctrl+S** or choose **File > Save**.
+7. Open a page containing an HTML5 video and press **Alt + Shift**.
 
 The userscript matches all webpages by default so it also works on video
 players embedded in sites that do not expose their own volume boost control.
+
+You can also open [`vidboost.user.js`](vidboost.user.js), copy its contents,
+and paste them directly into a new Tampermonkey script. This project is only
+a text userscript: there is no installer, build step, or release download.
 
 ## Usage
 
@@ -95,16 +99,16 @@ The value is applied to the active video immediately.
 
 ## Privacy
 
-VideoFlux has no network requests, no telemetry, no storage, and no external
+VidBoost has no network requests, no telemetry, no storage, and no external
 dependencies. It only reads video elements on the current page and modifies
 their local audio gain and playback rate.
 
 ## Project layout
 
 ```text
-videoflux.user.js       Tampermonkey userscript
+vidboost.user.js        Tampermonkey userscript
 docs/media/
-  videoflux-demo.gif    Animated controls demonstration
+  vidboost-demo.gif     Supplied controls demonstration
 LICENSE                 MIT license
 README.md               Documentation
 ```
@@ -128,4 +132,4 @@ you use. High gain can damage hearing or speakers; start at a low value.
 
 ## License
 
-VideoFlux is released under the [MIT License](LICENSE).
+VidBoost is released under the [MIT License](LICENSE).
